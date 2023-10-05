@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GhostGreenWalkingAnim
+  m_Name: GhostPurpleScared
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 97012006, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
+      value: {fileID: -2039527010, guid: c55845f96666bf74ca8b28d264633329, type: 3}
     - time: 0.33333334
-      value: {fileID: 237364637, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
+      value: {fileID: -389373437, guid: c55845f96666bf74ca8b28d264633329, type: 3}
     - time: 0.6666667
-      value: {fileID: 1148970909, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
+      value: {fileID: -1703467932, guid: c55845f96666bf74ca8b28d264633329, type: 3}
     - time: 1
-      value: {fileID: 520098398, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
+      value: {fileID: -1168430452, guid: c55845f96666bf74ca8b28d264633329, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,10 +50,10 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 97012006, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
-    - {fileID: 237364637, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
-    - {fileID: 1148970909, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
-    - {fileID: 520098398, guid: 18dddf6b4e7ddc64ca19cf7df09827da, type: 3}
+    - {fileID: -2039527010, guid: c55845f96666bf74ca8b28d264633329, type: 3}
+    - {fileID: -389373437, guid: c55845f96666bf74ca8b28d264633329, type: 3}
+    - {fileID: -1703467932, guid: c55845f96666bf74ca8b28d264633329, type: 3}
+    - {fileID: -1168430452, guid: c55845f96666bf74ca8b28d264633329, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
