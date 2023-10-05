@@ -6,6 +6,7 @@ using UnityEngine;
 public class RotatePlayer : MonoBehaviour
 {
     // Start is called before the first frame update
+    public Animator playerAnimator;
     void Start()
     {
     }
@@ -31,6 +32,11 @@ public class RotatePlayer : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             transform.rotation = Quaternion.Euler(0.0f, 0.0f, 270.0f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            playerAnimator.SetTrigger("HealthZero");
         }
 
 
