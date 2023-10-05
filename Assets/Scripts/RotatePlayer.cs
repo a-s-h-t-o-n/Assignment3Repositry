@@ -6,9 +6,10 @@ using UnityEngine;
 public class RotatePlayer : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Animator playerAnimator;
+    public Animator playerAnimatorController;
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -36,7 +37,7 @@ public class RotatePlayer : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            playerAnimator.SetTrigger("HealthZero");
+            playerAnimatorController.SetTrigger("HealthZero");
         }
 
 
