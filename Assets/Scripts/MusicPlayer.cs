@@ -6,28 +6,35 @@ public class MusicPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private AudioClip[] audioTracks = new AudioClip[4];
-    [SerializeField ]private AudioSource audio;
 
-    IEnumerator playAudio(AudioClip track)
+    IEnumerator playIntro(AudioClip track)
     {
-        audio = GetComponent<AudioSource>();
-        audio.clip = track;
-        audio.Play();
-        yield return new WaitForSeconds(audio.clip.length);
+        GetComponent<AudioSource>().clip = track;
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(track.length);
+        StartCoroutine(playTracks());
+    }
+
+    IEnumerator playTracks()
+    {
+        for (int i = 1; i < 4; i++)
+        {
+            GetComponent<AudioSource>().clip = audioTracks[i];
+            GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(audioTracks[i].length);
+        }
+        StartCoroutine(playTracks());
         
+
     }
     void Start()
     {
-        audio = GetComponent<AudioSource>();
-        playAudio(audioTracks[0]);
+        StartCoroutine(playIntro(audioTracks[0]));
     }
 
     // Update is called once per frame
     void Update()
     {
-        for (int i = 1; i < 4; i++)
-        {
-            playAudio(audioTracks[i]);
-        }
+
     }
 }
