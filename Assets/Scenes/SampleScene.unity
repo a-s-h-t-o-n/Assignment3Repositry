@@ -250,9 +250,6 @@ MonoBehaviour:
   audioTracks:
   - {fileID: 8300000, guid: 93ec8511ccd5eec47b6d6e3b2f5382f4, type: 3}
   - {fileID: 8300000, guid: d7653b82fcbe9934cbbe66bdf63c0c9c, type: 3}
-  - {fileID: 8300000, guid: d98d5728f4d33834b91468430c00a521, type: 3}
-  - {fileID: 8300000, guid: 6ac833584b2e8d54facec6e763855b6c, type: 3}
-  audio: {fileID: 0}
 --- !u!4 &888402645
 Transform:
   m_ObjectHideFlags: 0

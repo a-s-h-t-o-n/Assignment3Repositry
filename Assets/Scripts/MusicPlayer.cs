@@ -5,31 +5,28 @@ using UnityEngine;
 public class MusicPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private AudioClip[] audioTracks = new AudioClip[4];
+    [SerializeField] private AudioClip[] audioTracks = new AudioClip[2];
 
-    IEnumerator playIntro(AudioClip track)
+    IEnumerator playIntro()
     {
-        GetComponent<AudioSource>().clip = track;
+        GetComponent<AudioSource>().clip = audioTracks[0];
         GetComponent<AudioSource>().Play();
-        yield return new WaitForSeconds(track.length);
+        yield return new WaitForSeconds(audioTracks[0].length);
         StartCoroutine(playTracks());
     }
 
     IEnumerator playTracks()
     {
-        for (int i = 1; i < 4; i++)
-        {
-            GetComponent<AudioSource>().clip = audioTracks[i];
-            GetComponent<AudioSource>().Play();
-            yield return new WaitForSeconds(audioTracks[i].length);
-        }
+        GetComponent<AudioSource>().clip = audioTracks[1];
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(audioTracks[1].length);
         StartCoroutine(playTracks());
         
 
     }
     void Start()
     {
-        StartCoroutine(playIntro(audioTracks[0]));
+        StartCoroutine(playIntro());
     }
 
     // Update is called once per frame
